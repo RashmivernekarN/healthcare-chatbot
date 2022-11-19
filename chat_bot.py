@@ -120,10 +120,10 @@ def getprecautionDict():
 
 
 def getInfo():
-    print("-----------------------------------HealthCare ChatBot-----------------------------------")
-    print("\nYour Name? \t\t\t\t",end="->")
+    print("-----------------------------------Tele-Health AI Doctor-----------------------------------")
+    print("\nYour Name? \t\t",end=":")
     name=input("")
-    print("Hello, ",name)
+    print("Hello, ",name,"!")
 
 def check_pattern(dis_list,inp):
     pred_list=[]
@@ -221,7 +221,7 @@ def tree_to_code(tree, feature_names):
             # if len(dis_list)!=0:
             #     print("symptoms present  " + str(list(symptoms_present)))
             # print("symptoms given "  +  str(list(symptoms_given)) )
-            print("Are you experiencing any ")
+            print("Are you experiencing any :")
             symptoms_exp=[]
             for syms in list(symptoms_given):
                 inp=""
@@ -252,7 +252,7 @@ def tree_to_code(tree, feature_names):
 
             # print(description_list[present_disease[0]])
             precution_list=precautionDictionary[present_disease[0]]
-            print("Take following measures : ")
+            print("Take the following measures : ")
             for  i,j in enumerate(precution_list):
                 print(i+1,")",j)
 
